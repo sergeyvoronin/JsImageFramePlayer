@@ -1,4 +1,4 @@
-/* js slideshow scropt
+/* js image frame player script
 Sergey Voronin */
 
 //total number of images for the slideshow

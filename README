@@ -1,7 +1,9 @@
 JavaScript based image frame player with full manual controls. Able to be 
 used from most web browsers. This is useful, for example, for visualizing 
 frame by frame output from iterative algorithms in a web browser or as a 
-photo player.
+photo player. The player works by pre-loading all the image frames in a users web 
+browser and then playing them at arbitrary speed (without having to fetch 
+images individually).
 
 Written by Sergey Voronin.
 Last updated September 2014.
