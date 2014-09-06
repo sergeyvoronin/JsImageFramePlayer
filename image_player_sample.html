@@ -1,0 +1,94 @@
+<HTML>
+<HEAD>
+<TITLE> JS Image SlideShow Viewer 1.0 </TITLE>
+
+<LINK href="css/default_style.css" rel="stylesheet" type="text/css">
+<SCRIPT langauge="javascript" src="jscript/slideshow_script.js"></SCRIPT>
+
+</HEAD>
+
+<BODY style="background-color:#cccc99" onload=javascript:loadShow();>
+
+<div align="center">
+
+
+<!-- set required slideshow variables   -->
+<input type="hidden" id="slideshow_name_js" name="slideshow_name" value="My Slideshow Name" />
+<input type="hidden" id="slideshow_image_path_js" name="slideshow_image_path" value="images/" />
+<input type="hidden" id="slideshow_image_type_js" name="slideshow_image_type" value="jpg" />
+<input type="hidden" id="slideshow_num_images_js" name="slideshow_num_images" value="120" />
+<input type="hidden" id="slideshow_default_speed_js" name="slideshow_default_speed" value="4" />
+
+
+<!-- slideshow header with title -->
+<br />
+<br />
+<h3> Sample Frame Player (Use Controls Below to Operate) </h3>
+<br />
+
+
+<!-- slideshow reload controls -->
+<div id="slide_show_controls_js1" class="slideshow_controls" style="visibility: visible;">
+
+<input type="button" value=" Reload Slideshow " onmousedown="javascript:reloadShow();" style="color: #000077;" /> 
+<br />
+
+</div>
+
+
+
+<!-- slideshow status -->
+<span id="status_box_js" name="status_box" style="text-align: center; font-weight: bold; "> </span>
+
+
+<!-- slideshow image holder -->
+<div id="slide_show_image_div_js" style="cursor: hand; visibility: hidden;">
+    <br /> <img src="" id="slide_show_image_js" name="slide_show_image" /> <br />
+</div>
+			
+<br /><br />
+
+
+<!-- slideshow controls -->
+<div id="slide_show_controls_js2" class="slideshow_controls" style="visibility: visible;">
+
+        <input type="button" value=" << Play " onmousedown="javascript:startShowBackward();" style="color: #000077; background-color: #87DE85;" />
+        <input type="button" value="  Play >>>  " onmousedown="javascript:startShow();" style="color: #000077; background-color: #87DE85;" />
+        &nbsp;
+        <input type="button" value=" Stop " onmousedown="javascript:stopShow();" style="color: #000077; background-color: #FF6F52;" />
+        &nbsp;
+        <input type="button" value=" Reset " onmousedown="javascript:resetShow();" style="color: #000077; background-color: #FFC928;" />				
+
+        <br /> <br />
+
+        <input type="button" value=" << " onmousedown="javascript:stepToBeginning();" style="color: #000077;" />
+        &nbsp; &nbsp;
+        <input type="button" value=" < Step " onmousedown="javascript:stepBackward();" style="color: #000077;" />
+        &nbsp;
+        <input type="button" value=" Step > " onmousedown="javascript:stepForward();" style="color: #000077;" />
+        &nbsp; &nbsp;
+        <input type="button" value=" >> " onmousedown="javascript:stepToEnd();" style="color: #000077;" />
+        
+        <br /> <br />
+
+        <input type="button" value="jump2frame" onmousedown="javascript:gotoFrame();" style="color: #000077;" />
+        <input type="text" size="6" id="frame_number_js" name="frame_number" value="" style="background-color: #ddeeff; color: #000077; text-align: center;" />
+        &nbsp;
+        fps rate: 
+        <input type="button" value="dn" onmousedown="javascript:decreaseFPS();" style="color: #000077;" />
+        <input type="text" size="6" id="fps_rate_js" name="fps_rate" value="" style="background-color: #ddeeff; color: #000077; text-align: center;" />
+        <input type="button" value="up" onmousedown="javascript:increaseFPS();" style="color: #000077;" />
+        &nbsp;
+        current frame: <input type="text" id="current_frame_js" name="current_frame" size="10" style="background-color: #ddeeff; color: #000077; text-align: center;" />
+
+        <br /><br />
+
+</div>
+
+<br /><br />
+
+<div align="center">
+
+</BODY>
+</HTML>
+

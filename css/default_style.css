@@ -1,0 +1,182 @@
+BODY {
+	PADDING: 0px; MARGIN: 0px; FONT-SIZE: 14px; BACKGROUND: #ffffff; COLOR: #000000; FONT-FAMILY: Verdana, Tahoma, Arial, Sans-Serif, Serif; 
+}
+
+/*
+A#top_link {FONT-SIZE: 13px; COLOR: #082D45; FONT-FAMILY: Verdana, Tahoma, Arial, Sans-Serif, Serif; TEXT-DECORATION: none;}
+A:active#top_link {FONT-SIZE: 13px; COLOR: #082D45; FONT-FAMILY: Verdana, Tahoma, Arial, Sans-Serif, Serif; TEXT-DECORATION: none;}
+A:hover#top_link {FONT-SIZE: 13px; COLOR: #082D45; FONT-FAMILY: Verdana, Tahoma, Arial, Sans-Serif, Serif; TEXT-DECORATION: underline;}
+A:visited#top_link {FONT-SIZE: 13px; COLOR: #082D45; FONT-FAMILY: Verdana, Tahoma, Arial, Sans-Serif, Serif;}
+*/
+
+/*setup link styles*/
+A {
+FONT-SIZE: 16px; COLOR: #0044ee;  font-family: Verdana, Tahoma, Arial, Sans-Serif, Serif; TEXT-DECORATION: none;
+}
+A:active {
+FONT-SIZE: 16px; COLOR: #0000aa;  font-family: Verdana, Tahoma, Arial, Sans-Serif, Serif; TEXT-DECORATION: none;
+}
+A:hover {
+FONT-SIZE: 16px; COLOR: #0000aa;  font-family: Verdana, Tahoma, Arial, Sans-Serif, Serif; TEXT-DECORATION: underline;
+}
+
+A.top_links  {
+FONT-SIZE: 16px; COLOR: #ffffff;  font-family: Verdana, Tahoma, Arial, Sans-Serif, Serif; TEXT-DECORATION: none;
+}
+A.top_links:active  {
+FONT-SIZE: 16px; COLOR: #ffffff;  font-family: Verdana, Tahoma, Arial, Sans-Serif, Serif; TEXT-DECORATION: none;
+}
+A.top_links:hover  {
+FONT-SIZE: 16px; COLOR: #ffffff;  font-family: Verdana, Tahoma, Arial, Sans-Serif, Serif; TEXT-DECORATION: none;
+}
+
+/* top links */
+A.menu_links {
+    color: #fdfb8e; text-decoration: underline; font-size: 20px; background-color: #666633;
+
+}
+A.menu_links:active {
+    color: #fdfb8e; text-decoration: underline; font-size: 20px; background-color: #666633;
+}
+A.menu_links:hover {
+    color: #ffff00; text-decoration: underline; font-size: 20px; background-color: #666633;
+}
+
+
+.page_header {
+	font-family: Verdana, Tahoma, Arial, Sans-Serif, Serif; FONT-SIZE: 32px; COLOR: #000077; text-align: center;
+}
+
+
+.nav_menu {
+	font-family: Verdana, Tahoma, Arial, Sans-Serif, Serif; FONT-SIZE: 16px; BACKGROUND: #0044ee; PADDING-BOTTOM: 2px; CURSOR: pointer; COLOR: #ffffff; PADDING-TOP: 1px; text-align: center;
+}
+
+
+.nav_menu_over {
+	font-family: Verdana, Tahoma, Arial, Sans-Serif, Serif; FONT-SIZE: 16px; BACKGROUND: #0C2078; PADDING-BOTTOM: 2px;  CURSOR: pointer; COLOR: #ffffff; PADDING-TOP: 1px; text-align: center;
+}
+
+
+.event_menu {
+	font-family: Verdana, Tahoma, Arial, Sans-Serif, Serif; FONT-SIZE: 16px; BACKGROUND: #0044ee; PADDING-BOTTOM: 2px; CURSOR: pointer; COLOR: #ffffff; PADDING-TOP: 1px; text-align: center;
+}
+
+
+.event_menu_over {
+	font-family: Verdana, Tahoma, Arial, Sans-Serif, Serif; FONT-SIZE: 16px; BACKGROUND: #0C2078; PADDING-BOTTOM: 2px; CURSOR: pointer; COLOR: #ffffff; PADDING-TOP: 1px; text-align: center;
+}
+
+
+.citation_block { position: absolute; font-family: Verdana, Tahoma, Arial, Sans-serif, Serif; font-size: 16px; color: #082D45; }
+
+.citation_block_text{ font-family: Verdana, Tahoma, Arial, Sans-serif, Serif; font-size: 16px; color: #000077; padding-left: 5%; }
+
+.citation_headers{ font-family: Veradana, Tahoma, Arial, Sans-serif, Serif; font-size: 18px; color: #000077; padding-left: 5%;}
+
+
+/* style for the page title appearing at the top */
+.text_headers {
+font-family: Verdana, Tahoma, Arial, Sans-Serif, Serif;
+font-size: 20px;
+color: #000077;
+}
+
+/* style for the text to the left and right of the next/previous event buttons at the top */
+.event_button_text {
+font-family: Verdana, Tahoma, Arial, Sans-Serif, Serif;
+font-size: 13px;
+color: #000077;
+cursor: pointer;
+}
+
+.page_text {
+font-family: Verdana, Tahoma, Arial, Sans-serif, Serif;
+font-size: 16px;
+color: #000077; /*#001166*/;
+}
+
+.slideshow_text {
+font-family: Verdana, Tahoma, Arial, Sans-Serif, Serif;
+font-size: 16px;
+color: #000077;
+}
+
+/* make a box around controls with this */
+.slideshow_controls{
+/*border: solid #0000FF;*/
+}
+
+
+.component_titles {
+font-family: Verdana, Tahoma, Arial, Sans-Serif, Serif;
+font-size: 20px;
+color: #000077;
+cursor: pointer;
+}
+
+
+
+
+
+
+
+
+#mode_box {font-size: 14px; FONT-FAMILY: Verdana, Tahoma, Arial, Sans-Serif, Serif;}
+#event_box {font-size: 14px; FONT-FAMILY: Verdana, Tahoma, Arial, Sans-Serif, Serif;}
+#component_box {font-size: 14px; FONT-FAMILY: Verdana, Tahoma, Arial, Sans-Serif, Serif;}
+
+.browser {
+	PADDING-LEFT: 14px; font-family: Verdana, Tahoma, Arial, Sans-Serif, Serif; FONT-SIZE: 14px; BACKGROUND: #0044ee; PADDING-BOTTOM: 2px; CURSOR: auto; COLOR: #ffffff; PADDING-TOP: 1px;
+}
+
+/* style for generate page button at the bottom of the selection browser */
+.browser_button {
+	font-family: Verdana, Tahoma, Arial, Sans-Serif, Serif; FONT-SIZE: 15px; BACKGROUND: #0044ee; CURSOR: pointer; COLOR: #ffffff; 
+	PADDING-BOTTOM: 3px; PADDING-TOP: 3px; BORDER-BOTTOM: #000000 1px solid;
+}
+
+.browser_button_over {
+	font-family: Verdana, Tahoma, Arial, Sans-Serif, Serif; FONT-SIZE: 15px; BACKGROUND: #0C2078; CURSOR: pointer; COLOR: #ffffff;
+	PADDING-BOTTOM: 3px; PADDING-TOP: 3px; BORDER-BOTTOM: #000000 1px solid;
+}
+
+.component_viewer_menu {
+	FONT-FAMILY: Verdana, Tahoma, Arial, Sans-Serif, Serif; COLOR: #94B769; FONT-SIZE: small;
+}
+
+.top_menu {
+	FONT-FAMILY: Verdana, Tahoma, Arial, Sans-Serif, Serif; COLOR: #6a8eb7; FONT-SIZE: 14px;
+}
+
+
+.component_browser {
+	 font-family: Verdana, Tahoma, Arial, Sans-Serif, Serif; FONT-SIZE: 14px; BACKGROUND: #0044ee; PADDING-BOTTOM: 2px; CURSOR: default; PADDING-TOP: 1px; BORDER-BOTTOM: #000000 1px solid; COLOR: #ffffff;
+}
+
+.component_browser_text {
+	 font-family: Verdana, Tahoma, Arial, Sans-Serif, Serif; FONT-SIZE: 14px; PADDING-LEFT: 20px; text-align: left;
+}
+
+
+/* style for the component entry that appears in the component browser (i.e. entry for heat flux and etc) */
+.component_chooser {
+	font-family: Verdana, Tahoma, Arial, Sans-Serif, Serif; FONT-SIZE: 14; background-color: #ddeeff; color: #000000;
+}
+
+/* component menu separator -> separates the different groups in the selection browser */
+.component_separator {
+	 height: 8px; background-color: #0044ee;
+}
+
+/* component menu end spacer -> this is a separator for the ends of the static and slideshow boxes */
+.component_menu_end_spacer {
+	height: 1px; background-color: #ddeeff; width: 90%;
+}
+
+.setting_chooser {
+	font-family: Verdana, Tahoma, Arial, Sans-Serif, Serif; FONT-SIZE: 14; background-color: #ddeeff; color: #000077;
+}
+
+
+

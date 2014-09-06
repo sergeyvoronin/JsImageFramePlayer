@@ -1,0 +1,33 @@
+JavaScript based image frame player with full manual controls. Able to be 
+used from most web browsers. This is useful, for example, for visualizing 
+frame by frame output from iterative algorithms in a web browser or as a 
+photo player.
+
+Written by Sergey Voronin.
+Last updated September 2014.
+
+
+======= installation =========
+
+Simply download all files and launch image_player_sample.html 
+in a web browser to operate the frame player with the included 
+sample images.
+
+
+======= using your own image frames =========
+
+First, one must generate image frames. See the sample images/ directory 
+for an example. Obviously, all frames must be the same size to play 
+smoothly. There are many ways to generate such frames, for example, 
+to save an image during every iteration (or 10 iterations) of an iterative 
+algorithm. Of course this can also be used with unrelated photos and 
+for presentation purposes.
+
+After the image frames are generated, one must make an html file like 
+image_player_sample.html which references the location of the image files. 
+I.e.:
+
+<input type="hidden" id="slideshow_image_path_js" name="slideshow_image_path" value="images/" />
+
+Other options, like the default speed can also be set this way in the html file.
+  
