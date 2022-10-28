@@ -13,28 +13,24 @@
 
 
 <!-- set required slideshow variables   -->
-<input type="hidden" id="slideshow_name_js" name="slideshow_name" value="My Slideshow Name" />
-<input type="hidden" id="slideshow_image_path_js" name="slideshow_image_path" value="images/" />
+<input type="hidden" id="slideshow_name_js" name="slideshow_name" value="Boating" />
+<input type="hidden" id="slideshow_image_path_js" name="slideshow_image_path" value="images/set_boating/" />
 <input type="hidden" id="slideshow_image_type_js" name="slideshow_image_type" value="jpg" />
-<input type="hidden" id="slideshow_num_images_js" name="slideshow_num_images" value="120" />
-<input type="hidden" id="slideshow_default_speed_js" name="slideshow_default_speed" value="4" />
+<input type="hidden" id="slideshow_num_images_js" name="slideshow_num_images" value="530" />
+<input type="hidden" id="slideshow_default_speed_js" name="slideshow_default_speed" value="25" />
 
 
 <!-- slideshow header with title -->
-<br />
-<br />
-<h3> Sample Frame Player (Use Controls Below to Operate) </h3>
-<br />
-
 
 <!-- slideshow reload controls -->
 <div id="slide_show_controls_js1" class="slideshow_controls" style="visibility: visible;">
-
+<h3> Sample Frame Player (Use Controls Below to Operate) </h3>
 <input type="button" value=" Reload Slideshow " onmousedown="javascript:reloadShow();" style="color: #000077;" /> 
+
+&nbsp; &nbsp; &nbsp; 
 <br />
 
 </div>
-
 
 
 <!-- slideshow status -->
@@ -59,6 +55,12 @@
         &nbsp;
         <input type="button" value=" Reset " onmousedown="javascript:resetShow();" style="color: #000077; background-color: #FFC928;" />				
 
+	&nbsp; &nbsp; &nbsp; &nbsp; 
+<input type="button" value=" Mark Frame " onmousedown="javascript:markFrame();" style="color: #000077; background-color: #EDC928;" />				
+&nbsp; 
+<input type="button" value=" Un-mark Frame " onmousedown="javascript:unmarkFrame();" style="color: #000077; background-color: #FCC928;" />				
+
+        
         <br /> <br />
 
         <input type="button" value=" << " onmousedown="javascript:stepToBeginning();" style="color: #000077;" />
@@ -79,7 +81,14 @@
         <input type="text" size="6" id="fps_rate_js" name="fps_rate" value="" style="background-color: #ddeeff; color: #000077; text-align: center;" />
         <input type="button" value="up" onmousedown="javascript:increaseFPS();" style="color: #000077;" />
         &nbsp;
-        current frame: <input type="text" id="current_frame_js" name="current_frame" size="10" style="background-color: #ddeeff; color: #000077; text-align: center;" />
+        current frame: <input type="text" id="current_frame_js" name="current_frame" size="10" style="background-color: #ddeeff; color: #000077; text-align: center;" /> 
+
+		&nbsp; &nbsp;
+		<br />
+		<br />
+		<center>
+        marked frames: <input type="text" id="marked_frame_js" name="marked_frames" size="50" style="background-color: #ddeeff; color: #000077; text-align: center;" /> 
+		</center>
 
         <br /><br />
 

@@ -26,12 +26,13 @@ var showSpeed;
 var showTimer;
 
 
-//declare global variables for loadShow -> required for I.E.!
+//declare global variables for loadShow -> was required for older I.E.
 var slideshow_name;
 var show_image_path;
 var show_image_type;
 var show_num_images;
 var show_default_speed;
+var marked_frames = [];
 
 
 /* ##### start generic slideshow code ----->  ##### */
@@ -207,14 +208,18 @@ function loadCustomShow(show_image_path, show_image_type, show_num_images, show_
 	for(image_num=1; image_num<=total_number_of_images; image_num++){
 		image_num_str = image_num+'';
 
-                image_prefix = 'frame';
+                image_prefix = 'output_';
 
                 if(image_num<10){
-                    image_prefix = 'frame0';
+                    image_prefix = 'output_000';
                 }
                 else if(image_num>=10 && image_num<100){
-                    image_prefix = 'frame';
+                    image_prefix = 'output_00';
                 }
+				else if(image_num>=100 && image_num<1000){
+                    image_prefix = 'output_0';
+				}
+				//image_prefix = image_prefix.concat('_');
 
 		image_src = path_to_images + "/" + image_prefix + image_num_str + "." + show_image_type;
 		image_src_array.push(image_src);
@@ -352,6 +357,26 @@ function gotoFrame(){
 	}
 	else{ alert("Sorry, but there are only " + total_number_of_images + " frames"); }
 }
+
+
+/* mark frame for high q */
+function markFrame(){
+	marked_frames.push(image_num);
+	// update list
+	marked_frames_elem = document.getElementById('marked_frame_js');
+    	marked_frames_elem.value = marked_frames.toString();
+}
+
+/* mark frame for high q */
+function unmarkFrame(){
+	marked_frames.pop(image_num);
+
+	// update list
+	marked_frames_elem = document.getElementById('marked_frame_js');
+    marked_frames_elem.value = marked_frames.toString();
+}
+
+
 
 
 function increaseFPS(){

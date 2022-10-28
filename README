@@ -1,35 +1,28 @@
-JavaScript based image frame player with full manual controls. Able to be 
-used from most web browsers. This is useful, for example, for visualizing 
-frame by frame output from iterative algorithms in a web browser or as a 
-photo player. The player works by pre-loading all the image frames in a users web 
-browser and then playing them at arbitrary speed (without having to fetch 
-images individually).
+JavaScript based image frame player manual controls for use in web browser. This is useful, for example, for visualizing 
+frame by frame output from a video or an iterative output. The player works by pre-loading all the image frames to local cache  
+and then displays them in sequence at the indicated speed.
 
 Written by Sergey Voronin.
-Last updated September 2014.
+Last updated 2014, 2022.
 
 
-======= installation =========
+======= Installation =========
 
-Simply download all files and launch image_player_sample.html 
-in a web browser to operate the frame player with the included 
+Download all files and launch image_player_sample.html in a web browser to operate the frame player with the included 
 sample images.
 
 
-======= using your own image frames =========
+======= Using image frames =========
 
 First, one must generate image frames. See the sample images/ directory 
-for an example. Obviously, all frames must be the same size to play 
-smoothly. There are many ways to generate such frames, for example, 
+for an example. Frames must be the same size to play 
+smoothly. There are multiple ways to generate such frames, for example, 
 to save an image during every iteration (or 10 iterations) of an iterative 
-algorithm. Of course this can also be used with unrelated photos and 
-for presentation purposes.
+algorithm or with ffmpeg or mencoder from a video file:
+ffmpeg -i video.mp4 -r 29.97 -q:v 1 -quality 98% images/output_%04d.jpg
 
 After the image frames are generated, one must make an html file like 
 image_player_sample.html which references the location of the image files. 
-I.e.:
 
 <input type="hidden" id="slideshow_image_path_js" name="slideshow_image_path" value="images/" />
-
 Other options, like the default speed can also be set this way in the html file.
-  
